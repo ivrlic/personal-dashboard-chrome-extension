@@ -1,0 +1,41 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="index.css">
+        <title>Personal Dashboard</title>
+    </head>
+    <body>
+        <main>
+            <!-- INFO ABOUT MANAGING TODOS -->
+            <div id="info-cont">
+                <button id="info-btn">i</button>
+                <div id="info-text" class="not-displayed">
+                    <p>1. Click once to check or uncheck a task</p>
+                    <p>2. Double click to delete a task</p>
+                </div>
+            </div>
+            
+            <!-- TOP     -->
+            <div class="top">
+                <div id="todos-container"></div>
+                <h1 id="time" class="time"><span>Now is the best time</span></h1>
+                <div id="weather">
+                    <div class="loader"></div>
+                </div>
+            </div>
+
+            <!-- BOTTOM -->
+            <div class="bottom">
+                <p id="quote"></p>
+                <div id="input-todo-container">
+                        <div id="input-container" class="not-displayed">
+                            <input type="text" placeholder="What are your goals" id="input-todo">
+                            <button id="add-todo">+</button>
+                        </div>
+                    <img id="input-icon" class="big-input-icon" src="images/bulleted-list.png" alt="the icon of bulleted list">
+                </div>
+            </div>
+        </main>
+        <script src="index.js" type="module"></script>
+    </body>
+</html>
